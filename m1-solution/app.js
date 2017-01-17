@@ -12,11 +12,11 @@ angular.module('LunchCheck', [])
     	if (dishes_list.length>3){
    			$scope.recomendation = "Too much!"   
     	} else
- 			$scope.recomendation = "Enjoy!"   
+ 			$scope.recomendation = "Enjoy!";
+ 		$scope.class_state = "ok";   
  	}else {
  		$scope.class_state = "attention";
  		$scope.recomendation = "Please enter data first";
- 		$scope.class_state = "ok";
  	}
   };
 });
