@@ -3,7 +3,7 @@
 <h3>Narrowed down menu choice</h3>
 <ol>
   <li ng-repeat="item in narrowDownCtrl.foundItems">
-    {{ item.name }}
+    <b>Short name:</b> {{item.short_name}}. <b>Name:</b> {{item.name}}. <b>Description:</b> {{ item.description }}
     <button ng-click="narrowDownCtrl.onRemove({index: $index});">Don't want this one</button>
   </li>
 </ol>
