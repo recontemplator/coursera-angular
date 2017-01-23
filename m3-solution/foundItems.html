@@ -1,0 +1,11 @@
+<br></br>
+<div ng-if="narrowDownCtrl.foundItems && narrowDownCtrl.foundItems.length">
+<h3>Narrowed down menu choice</h3>
+<ol>
+  <li ng-repeat="item in narrowDownCtrl.foundItems">
+    {{ item.name }}
+    <button ng-click="narrowDownCtrl.onRemove({index: $index});">Don't want this one</button>
+  </li>
+</ol>
+</div>
+<h3 ng-if="narrowDownCtrl.foundItems && !narrowDownCtrl.foundItems.length">Nothing found</h3>
