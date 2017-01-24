@@ -25,7 +25,7 @@ function FoundItemsDirective() {
 
 
 NarrowItDownController.$inject = ['MenuSearchService'];
-function NarrowItDownController(MenuSearchService,$http) {
+function NarrowItDownController(MenuSearchService) {
   var ctrl = this;
   // ctrl.searchTerm='garlic';
   ctrl.narrowClicked = function () {
